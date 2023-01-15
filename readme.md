@@ -1,7 +1,7 @@
 srtcleaner docker image
 =======================
 
-A docker image for [srtcleaner](https://pypi.org/project/srtcleaner/) tool.
+A docker image for [srtcleaner](https://github.com/MestreLion/srtcleaner) tool.
 
 CD into the folder with subs (or its parent, since it's recursive by default), and run it like:
 
@@ -17,13 +17,23 @@ If you want to change the params, you can overwrite them by specifying it as a c
 docker run --rm -v $PWD:/files elboletaire/srtcleaner -r /files
 ~~~
 
+Using it as a bazarr post-processing script:
+
+~~~bash
+docker run --rm -v {{directory}}:/files elboletaire/srtcleaner
+~~~
+
 License
 -------
+
+This license is for the Dockerfile and config. The srtcleaner tool [is licensed under the GPLv3+](https://github.com/MestreLion/srtcleaner/blob/main/LICENSE).
+
+This project files are licensed under the WTFPL:
 
         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                         Version 2, December 2004
 
-    Copyright (C) 2022 Òscar Casajuana
+    Copyright (C) 2023 Òscar Casajuana
 
     Everyone is permitted to copy and distribute verbatim or modified
     copies of this license document, and changing it is allowed as long
