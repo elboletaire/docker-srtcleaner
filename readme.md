@@ -20,7 +20,7 @@ docker run --rm -v $PWD:/files elboletaire/srtcleaner -r /files
 Using it as a bazarr post-processing script:
 
 ~~~bash
-docker run --rm -v {{directory}}:/files elboletaire/srtcleaner
+docker run --rm -v "{{directory}}:/files" elboletaire/srtcleaner
 ~~~
 
 License
